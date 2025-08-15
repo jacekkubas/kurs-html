@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>testowa nazwa</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        color: #25282bff;
+        background: #f9faffff;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 30px;
+      }
+
+      .section {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 30px;
+      }
+
+      .column {
+        width: 50%;
+      }
+
+      .caption {
+        color: #fdc435ff;
+        margin-bottom: 12px;
+      }
+
+      .heading {
+        font-size: 64px;
+        line-height: 1.2;
+        margin-top: 0;
+        margin-bottom: 32px;
+        font-family: serif;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .button {
+        background-color: #fdc435ff;
+        border-radius: 4px;
+        padding: 8px;
+        box-sizing: border-box;
+        width: 115px;
+        margin-right: 12px;
+        text-align: center;
+        border: 2px solid #fdc435ff;
+      }
+
+      .button.white {
+        background-color: white;
+        border: 2px solid #25282bff;
+      }
+
+      a {
+        color: #25282bff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body style="font-size: 16px">
+    <header class="header">
+      <div>Madelyn Torff</div>
+      <div>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/contacts">Contacts</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="column">
+        <p class="caption">UI/UX Designer</p>
+        <h1 class="heading">Hello, my<br />name is<br />Madelyn Torff</h1>
+        <p>
+          Short text with details about you, what you do or your professional
+          career. You can add more information on the about page.
+        </p>
+        <div>
+          <button class="button">Projects</button>
+          <button class="button white">LinkedIn</button>
+        </div>
+      </div>
+      <div class="column">
+        <img src="./image.png" alt="kobieta z kwiatkiem" />
+      </div>
+    </section>
+  </body>
+</html>
