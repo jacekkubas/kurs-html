@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML Forms Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.5;
+    }
+    .form-section {
+      border: 1px solid #ccc;
+      padding: 16px;
+      margin-bottom: 20px;
+      max-width: 400px;
+    }
+    h1 {
+      margin-bottom: 24px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      padding: 6px;
+      margin-top: 4px;
+    }
+    fieldset {
+      margin-top: 12px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    legend {
+      font-weight: bold;
+    }
+    .option-group label {
+      display: block;
+      font-weight: normal;
+      margin-top: 4px;
+    }
+    button {
+      display: block;
+      margin-top: 12px;
+      cursor: pointer;
+      padding: 8px 12px;
+    }
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML Form Examples</h1>
+
+  <!-- 1. Login Form -->
+  <div class="form-section">
+    <h2>Login Form</h2>
+    <form>
+      <label for="login-email">Email</label>
+      <input id="login-email" type="email" required placeholder="you@example.com">
+
+      <label for="login-pass">Password</label>
+      <input id="login-pass" type="password" required placeholder="••••••••">
+
+      <button type="submit">Sign in</button>
+    </form>
+  </div>
+
+  <!-- 2. Shop Form -->
+  <div class="form-section">
+    <h2>Shop Form (Order Product)</h2>
+    <form>
+      <label for="product">Choose product</label>
+      <select id="product" required>
+        <option value="">-- Select an item --</option>
+        <option>Notebook</option>
+        <option>Headphones</option>
+        <option>Keyboard</option>
+      </select>
+
+      <label for="quantity">Quantity</label>
+      <input id="quantity" type="number" min="1" max="10" value="1">
+
+      <fieldset>
+        <legend>Extras (choose any)</legend>
+        <div class="option-group">
+          <label><input type="checkbox"> Gift wrap</label>
+          <label><input type="checkbox"> Extended warranty</label>
+          <label><input type="checkbox"> Rush processing</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment Method (choose one)</legend>
+        <div class="option-group">
+          <label><input type="radio" name="payment" value="card"> Credit Card</label>
+          <label><input type="radio" name="payment" value="paypal"> PayPal</label>
+          <label><input type="radio" name="payment" value="bank"> Bank Transfer</label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+
+  <!-- 3. Contact Form -->
+  <div class="form-section">
+    <h2>Contact Form</h2>
+    <form>
+      <label for="cf-name">Name</label>
+      <input id="cf-name" type="text" required>
+
+      <label for="cf-email">Email</label>
+      <input id="cf-email" type="email" required>
+
+      <fieldset>
+        <legend>Reason for Contact</legend>
+        <div class="option-group">
+          <label><input type="radio" name="reason" value="support"> Support</label>
+          <label><input type="radio" name="reason" value="feedback"> Feedback</label>
+          <label><input type="radio" name="reason" value="other"> Other</label>
+        </div>
+      </fieldset>
+
+      <label for="cf-msg">Message</label>
+      <textarea id="cf-msg" placeholder="Your message..."></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</body>
+</html>

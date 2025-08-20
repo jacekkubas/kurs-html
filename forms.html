@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple HTML Forms Tutorial</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.5;
+    }
+    .form-section {
+      border: 1px solid #ccc;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    button {
+      margin-top: 12px;
+      cursor: pointer;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML Forms Tutorial</h1>
+
+  <div class="form-section">
+    <h2>Text Inputs & Labels</h2>
+    <label for="name">Full name</label>
+    <input id="name" type="text" placeholder="Ada Lovelace">
+
+    <label for="email">Email address</label>
+    <input id="email" type="email" placeholder="ada@example.com">
+  </div>
+
+  <div class="form-section">
+    <h2>Login Form</h2>
+    <label for="login-email">Email</label>
+    <input id="login-email" type="email" required>
+
+    <label for="login-pass">Password</label>
+    <input id="login-pass" type="password" required>
+    <button type="submit">Sign in</button>
+    
+  </div>
+
+  <div class="form-section">
+    <h2>Selects, Radios, Checkboxes</h2>
+    <label for="role">Role</label>
+    <select id="role">
+      <option value="">Choose one…</option>
+      <option>Designer</option>
+      <option>Developer</option>
+      <option>Producer</option>
+    </select>
+
+    <fieldset>
+      <legend>Platform targets</legend>
+      <label><input type="checkbox"> PC</label>
+      <label><input type="checkbox"> PlayStation</label>
+      <label><input type="checkbox"> Xbox</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Experience level</legend>
+      <label><input name="xp" type="radio"> Beginner</label>
+      <label><input name="xp" type="radio"> Intermediate</label>
+      <label><input name="xp" type="radio"> Advanced</label>
+    </fieldset>
+  </div>
+
+  <div class="form-section">
+    <h2>Input Types</h2>
+    <label for="date">Date</label>
+    <input id="date" type="date">
+
+    <label for="color">Favorite Color</label>
+    <input id="color" type="color">
+
+    <label for="num">Quantity</label>
+    <input id="num" type="number" min="1" max="5">
+  </div>
+
+  <div class="form-section">
+    <h2>Textarea</h2>
+    <label for="bio">Short bio</label>
+    <textarea id="bio" maxlength="140"></textarea>
+  </div>
+
+  <div class="form-section">
+    <h2>Contact Form</h2>
+    <label for="cf-name">Name</label>
+    <input id="cf-name" type="text" required>
+
+    <label for="cf-email">Email</label>
+    <input id="cf-email" type="email" required>
+
+    <label for="cf-msg">Message</label>
+    <textarea id="cf-msg"></textarea>
+
+    <button type="submit">Send</button>
+  </div>
+</body>
+</html>
