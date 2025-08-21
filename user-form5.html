@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple HTML Forms Tutorial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="user-form5.css">
+  <style>
+    h2 {
+      color: red;
+      font-size: 16px;
+    }
+
+    #heading2 {
+      color: yellow
+    }
+
+    .heading {
+      color: purple 
+    }
+  </style>
+</head>
+<body>
+</head>
+<body>
+  <div class="form-section">
+    <h2 id="heading2" class="heading" style="font-size: 80px">Login Form</h2>
+  
+      <form action="#" method="GET">
+        <label for="login-email">E-mail</label>
+        <input id="heading" name="email" type="email" required placeholder="you@example.com">
+
+        <label for="heading">Password</label>
+        <input id="login-pass" name="password"  type="password" required placeholder="••••••••" minlength="4">
+        <button type="submit">Sign in</button>
+      </form>
+  </div>
+  <div class="heading">
+    <h2 id="heading3">Shop Form</h2>
+    <form>
+      <label for="role">Choose product</label>
+      <select name="select" id="role">
+        <option value="">Select an item</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+      <label for="name">Quantity</label>
+      <input name="quantity" id="Quantity" type="number" placeholder="1">
+      <fieldset>
+        <legend>Extras</legend>
+        <label><input type="checkbox" name="check1"> gift</label>
+        <label><input type="checkbox" name="check2"> warranty</label>
+        <label><input type="checkbox" name="check3"> rush</label>
+      </fieldset>
+      <fieldset>
+        <legend>Payment</legend>
+        <label><input type="radio" name="radio" value="gift"> gift</label>
+        <label><input type="radio" name="radio" value="paypal"> paypal</label>
+        <label><input type="radio" name="radio" value="bank"> bank</label>
+      </fieldset>
+      <button type="submit">place order</button>
+    </form>
+  </div>
+  <div class="form-section">
+    <h2>Contact Form</h2>
+    <form>
+      <label for="cf-name">Name</label>
+      <input id="cf-name" name="name" type="text" required>
+
+      <label for="cf-email">Email</label>
+      <input id="cf-email" name="email" type="email" required>
+
+      <fieldset>
+        <legend>Reason for contact</legend>
+        <label><input type="checkbox" name="checkobx1"> support</label>
+        <label><input type="checkbox" name="checkobx2"> feedback</label>
+        <label><input type="checkbox" name="checkobx3"> other</label>
+      </fieldset>
+
+      <label for="cf-msg">Message</label>
+      <textarea id="cf-msg" name="message"></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</body>
+</html>

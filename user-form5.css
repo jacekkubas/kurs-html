@@ -1,0 +1,27 @@
+body {
+  font-family: "Nunito", serif;
+  margin: 20px;
+  line-height: 1.5;
+}
+
+.form-section {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 12px;
+  cursor: pointer;
+  display: block;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+}

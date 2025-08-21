@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .formFavoriteWebLanguage {
+        margin-top: 20px;
+        padding: 10px;
+        border: 20px solid #ccc;
+        background-color: rgb(228, 39, 171);
+        width: 400px;
+        background-color: rgb(228, 39, 171);
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      button {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="formFavoriteWebLanguage">
+      <strong>Jakiego języka używasz poczas lekcji?</strong>
+      <form method="GET" action="">
+        <input type="radio" id="html" name="language" value="HTML" />
+        <label for="html">HTML</label>
+        <br />
+        <input type="radio" id="css" name="language" value="CSS" />
+        <label for="css">CSS</label>
+        <br />
+        <input
+          type="radio"
+          id="javascript"
+          name="language"
+          value="JavaScript" />
+        <label for="javascript">JavaScript</label>
+        <br />
+        <input type="radio" id="php" name="language" value="PHP" />
+        <label for="php">PHP</label>
+        <div>
+          <strong>Aby otrzymać zniżkę zapisz sie na newsletter</strong>
+          <br />
+          <label for="email">Podaj email:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="anymail@example.com" />
+        </div>
+        <div>
+          <button type="submit">Wyślij</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

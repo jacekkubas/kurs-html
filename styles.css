@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.left-column {
+  width: 300px;
+}
+
+.middle {
+  width: 500px;
+}
+
+td,
+th,
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}

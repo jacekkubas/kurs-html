@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <style>
+      label,
+      button {
+        display: block;
+        margin-top: 4px;
+      }
+
+      div {
+        border: 1px solid;
+        margin-bottom: 20px;
+        padding: 10px;
+        max-width: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>HTML Form</h1>
+    <div>
+      <h2>Login</h2>
+      <form>
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          required
+          placeholder="aaa@aa.aa" />
+        <label form="password">Hasło</label>
+        <input
+          id="password"
+          type="password"
+          name="password"
+          required
+          placeholder="********" />
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+
+    <div>
+      <h2>Sklep</h2>
+      <form>
+        <label for="product_option">Produkt</label>
+        <select id="product_option" name="product" required>
+          <option value=""></option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+
+        <label for="quality">Jakość</label>
+        <input
+          id="quality"
+          name="quality"
+          type="number"
+          value="0"
+          min="0"
+          max="100" />
+
+        <fieldset>
+          <legend>Inne</legend>
+          <label>
+            <input type="checkbox" name="other" value="1" />
+            Opcja 1
+          </label>
+          <label>
+            <input type="checkbox" name="other" value="2" />
+            Opcja 2
+          </label>
+          <label>
+            <input type="checkbox" name="other" value="3" />
+            Opcja 3
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Płatnosć</legend>
+          <label>
+            <input type="radio" name="payment" value="karta" />
+            Karta
+          </label>
+          <label>
+            <input type="radio" name="payment" value="gotowka" />
+            Gotówka
+          </label>
+          <label>
+            <input type="radio" name="payment" value="blik" />
+            Blik
+          </label>
+        </fieldset>
+
+        <button type="submit">OK</button>
+      </form>
+    </div>
+
+    <div>
+      <h2>Kontakt</h2>
+      <form>
+        <label for="name">Imie</label>
+        <input id="name" type="text" name="name" required />
+        <label for="email2">Email</label>
+        <input id="email2" type="email" name="email2" required />
+
+        <fieldset>
+          <legend>Temat</legend>
+          <label>
+            <input type="radio" name="reason" value="" />
+            Nic
+          </label>
+          <label>
+            <input type="radio" name="reason" value="pomoc" />
+            Pomoc
+          </label>
+          <label>
+            <input type="radio" name="reason" value="wsparcie" />
+            Wsparcie
+          </label>
+          <label>
+            <input type="radio" name="reason" value="inne" />
+            Inne
+          </label>
+        </fieldset>
+
+        <label for="mess">Wiadomosc</label>
+        <textarea id="mess" name="mess"></textarea>
+        <button type="submit">Wyślij</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<style>
+  .container {
+    width: 1000px;
+    border: 1px solid #808080;
+    margin: 0px auto;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+  }
+
+  div {
+    margin: 10px;
+  }
+</style>
+
+<body>
+
+  <div class="container">
+    <h1>Rejestracja</h1>
+
+    <form action="" method="GET">
+        <div>
+            <label for="imie">Imię:</label><br>
+            <input type="text" id="imie" name="imie" required><br>
+        </div>
+        <div>
+            <label for="nazwisko">Nazwisko:</label><br>
+            <input type="text" id="nazwisko" name="nazwisko">
+        </div>
+        <div>
+            <label for="mail">Adres email:</label><br>
+            <input type="email" id="mail" name="mail" required>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Wybierz jakieś coś (można <u>wiele</u>):</legend>
+
+                <input type="checkbox" id="poz1" name="poz1" value="true">
+                <label for="poz1">Pozycja 1</label><br>
+
+                <input type="checkbox" id="poz2" name="poz2" value="true">
+                <label for="poz2">Pozycja 2</label><br>
+
+                <input type="checkbox" id="poz3" name="poz3" value="true">
+                <label for="poz3">Pozycja 3</label>
+                </label>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Wybierz <b>jedno</b> z wielu:</legend>
+
+                <div>
+                    <input type="radio" id="rad1" name="rad_gr" value="rad1">
+                    <label for="rad1">Radio 1</label>
+                </div>
+                <div>
+                    <input type="radio" id="rad1" name="rad_gr" value="rad2">
+                    <label for="css">Radio 2</label>
+                </div>
+                <div>
+                    <input type="radio" id="rad3" name="rad_gr" value="rad3">
+                    <label for="javascript">Radio 3</label>
+                </div>
+                </label>
+            </fieldset>
+        </div>
+
+        <div>
+            <input type="reset" value="Wyczyść">
+            <input type="submit" value="Wyślij">
+        </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <style>
+    .form form {
+      display: flex;
+      flex-direction: column;
+      max-width: 25%;
+    }
+
+    .extras,
+    .payment,
+    .product,
+    .quantity,
+    .submit {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0 10px 0;
+    }
+
+    #quantity {
+      width: 20%;
+    }
+
+    .product {
+      width: 50%;
+    }
+
+    #submit-button {
+      width: 40%;
+    }
+  </style>
+
+  <body>
+    <div class="form">
+      <form method="get">
+        <h2>Shop Form (Order Product)</h2>
+        <div class="product">
+          <label for="options">Choose product</label>
+          <select id="options" required name="options">
+            <option value="">--Select and item --</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+          </select>
+        </div>
+
+        <div class="quantity">
+          <label for="quantity">Quantity</label>
+          <input id="quantity" name="quantity" type="number" required />
+        </div>
+
+        <fieldset>
+          <legend>Extras (choose any)</legend>
+          <div class="extras">
+            <label>
+              <input name="checkbox1" type="checkbox" />
+              Gift wrap
+            </label>
+            <label>
+              <input name="checkbox2" type="checkbox" />
+              Extended warranty
+            </label>
+            <label>
+              <input name="checkbox3" type="checkbox" />
+              Rush processing
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment Method (choose one)</legend>
+          <div class="payment">
+            <label>
+              <input type="radio" name="payment" value="card" required />
+              Credit Card
+            </label>
+            <label>
+              <input type="radio" name="payment" value="paypal" />
+              PayPal
+            </label>
+            <label>
+              <input type="radio" name="payment" value="bank" />
+              Bank Transfer
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="submit">
+          <button id="submit-button" type="submit">Place Order</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
